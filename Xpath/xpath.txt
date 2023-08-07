@@ -1,0 +1,22 @@
+
+Contains:::
+//tagname[contains(@AN,'AV')]
+//tagname[contains(text(),'AV')]
+
+Starts-with ::::
+
+//tagname[starts-with(@AN,'AV')]
+//tagname[starts-with(text(),'AV')]
+
+Multiple attributes ::
+
+//tagname[@AN='AV' or @AN='AV']
+//tagname[@AN='AV' and @AN='AV']
+//tagname[text()='AV' and @AN='AV']
+//tagname[@AN='AV' and text()='AV']
+//tagname[@AN='AV' or text()='AV']
+
+xpath dependant :::
+(//input)[2]/parent::div
+(//input)[2]/../../
+(//input)[2]/parent::div/input/following-sibling::input/preceding-sibling::input
